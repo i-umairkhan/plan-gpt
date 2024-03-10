@@ -22,7 +22,7 @@ export const Logo = () => {
           "text-lg text-neutral-700 pb-1",
           headingFont.className,
         )}>
-          Taskify
+          PlanGPT
         </p>
       </div>
     </Link>
