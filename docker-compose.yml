@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: plan-gpt-db
+      MYSQL_DATABASE: plangptdb
+      MYSQL_USER: umair
+      MYSQL_PASSWORD: plan-gpt-db
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./data:/var/lib/mysql
