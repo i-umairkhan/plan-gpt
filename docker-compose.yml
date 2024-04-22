@@ -4,9 +4,10 @@ services:
   mysql:
     image: mysql:latest
     restart: always
+    container_name: mysql_db
     environment:
       MYSQL_ROOT_PASSWORD: plan-gpt-db
-      MYSQL_DATABASE: plangptdb
+      MYSQL_DATABASE: mydb
       MYSQL_USER: umair
       MYSQL_PASSWORD: plan-gpt-db
     ports:

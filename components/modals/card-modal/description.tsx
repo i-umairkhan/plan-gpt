@@ -14,6 +14,10 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { FormTextarea } from "@/components/form/form-textarea";
 import { FormSubmit } from "@/components/form/form-submit";
 import { Button } from "@/components/ui/button";
+import { format } from "date-fns";
+
+
+
 
 interface DescriptionProps {
   data: CardWithList;
@@ -79,6 +83,10 @@ export const Description = ({
 
   return (
     <div className="flex items-start gap-x-3 w-full">
+      <p className=" text-neutral-700 mb-2">
+         <b>Due Date:</b> <br></br>
+        {format(new Date(data.duedate), "MMM d, yyyy 'at' h:mm a")}
+      </p>
       <AlignLeft className="h-5 w-5 mt-0.5 text-neutral-700" />
       <div className="w-full">
         <p className="font-semibold text-neutral-700 mb-2">
