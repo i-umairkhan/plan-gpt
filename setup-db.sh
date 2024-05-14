@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variables
-MYSQL_CONTAINER_NAME="mysql_dbplan-gpt-db"
+MYSQL_CONTAINER_NAME="mysql_db"
 MYSQL_ROOT_PASSWORD="plan-gpt-db"
 MYSQL_DATABASE="mydb"
 SCHEMA_NAME="plangptdb"
@@ -26,3 +26,7 @@ npx prisma db push
 
 
 echo "Setup complete."
+
+
+
+

@@ -7,6 +7,7 @@ import {
   CreditCard,
   Layout,
   Settings,
+  Book
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -61,6 +62,11 @@ export const NavItem = ({
       label: "Billing",
       icon: <CreditCard className="h-4 w-4 mr-2" />,
       href: `/organization/${organization.id}/billing`,
+    },
+    {
+      label: "Report",
+      icon: <Book className="h-4 w-4 mr-2" />,
+      href: `/organization/${organization.id}/report`,
     },
   ];
 

@@ -100,3 +100,4 @@ components/server/*.log
 dump.rdb
 
 data/
+cache/
