@@ -3,6 +3,10 @@ version: '3.8'
 services:
   mysql:
       image: mysql:latest 
+      deploy:
+        resources:
+          limits:
+            memory: 4G
       container_name: mysql_db
       ports:
         - 3306:3306

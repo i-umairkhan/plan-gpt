@@ -10,3 +10,4 @@ python-dotenv
 langchain_google_genai
 flask
 flask-cors
+mysql-connector-python

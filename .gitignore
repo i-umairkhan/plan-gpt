@@ -1,5 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+data
+conf-mysql.cfg
+cache
+
 # dependencies
 /node_modules
 /.pnp
@@ -99,5 +103,3 @@ components/server/*.log
 # Local redis dump files
 dump.rdb
 
-data/
-cache/
